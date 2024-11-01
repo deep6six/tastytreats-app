@@ -33,6 +33,13 @@ TastyTreat is a web application designed to streamline restaurant operations, in
    ```
 
 ## Usage
+- User Registration and Login: Saftely store user credentials, track order history and give a personalized user account.
+- Menu Display and Dynamic Updates: Use of a dynamic interface to update items based on avilability and special offers.
+- Shopping Cart Functionality: Allow customers to modify the addition or removal of items in their shopping cart, giving a smoother experience.
+- Secure Payment Processing: Reliable payment gateways to handle varied payment methods, ensuring data security.
+- Customer FeedBack System: Lets customers leave reviews that provides valuable insights for the team.
+- Employee Managment Tools for Scheduling/Payroll: Create and manage employee schedules, track work hours, and deals with employee payroll.
+- Order Confirmation and CheckoutFeatures: Display order summaries and confirming details to reduce customer errors.
 
 ### Running the Application
 After completing the installation steps, you can start the application by running the frontend and backend servers:
@@ -92,6 +99,9 @@ If you have any questions, suggestions, or feedback, feel free to reach out!
 
 - **John Doe**  
   - Email: [john.doe@example.com](mailto:john.doe@example.com)  
-  - GitHub: [john-doe](https://github.com/deep6six) 
+  - GitHub: [john-doe](https://github.com/deep6six)
+- **Tim Yang**
+  - Email: [timyang@csus.edu](mailto:timyang@csus.edu)
+  - GitHub: [Tim Yang](https://github.com/timyang-bait)
 
 Feel free to open an issue on the repository for bugs or feature requests.
