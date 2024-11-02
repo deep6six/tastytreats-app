@@ -98,8 +98,8 @@ We welcome contributions to TastyTreat! To contribute:
 If you have any questions, suggestions, or feedback, feel free to reach out!
 
 - **John Doe**  
-  - Email: [john.doe@example.com](mailto:john.doe@example.com)  
-  - GitHub: [john-doe](https://github.com/deep6six)
+  - Email: [randykim2@csus.edu](mailto:randykim2@csus.edu)  
+  - GitHub: [deep6six](https://github.com/deep6six)
 - **Tim Yang**
   - Email: [timyang@csus.edu](mailto:timyang@csus.edu)
   - GitHub: [Tim Yang](https://github.com/timyang-bait)
