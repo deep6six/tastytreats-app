@@ -118,5 +118,8 @@ If you have any questions, suggestions, or feedback, feel free to reach out!
 - **Gurinderpreet Singh**
   - Email: [gsingh31@csus.edu](mailto:gsingh31@csus.edu)
   - GitHub: [GurinderpreetSingh](https://github.com/GurinderpreetSingh)
+- **Erik Contreras**
+   - Email: [erikcontreras@csus.edu](mailto:erikcontreras@csus.edu)
+   - GitHub: [Erik Contreras](https://github.com/rIKeCO2)
 
 Feel free to open an issue on the repository for bugs or feature requests.
