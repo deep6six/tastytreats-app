@@ -1,6 +1,6 @@
 # TastyTreat - Restaurant Management System
 
-## Overview
+## Overview of the program
 
 TastyTreat is a web application designed to streamline restaurant operations, including customer management, order processing, and employee management. This system provides an efficient way for users to interact with the restaurant, whether they are customers placing orders, employees managing their schedules, or administrators overseeing operations.
 
