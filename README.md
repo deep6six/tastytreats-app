@@ -115,7 +115,7 @@ If you have any questions, suggestions, or feedback, feel free to reach out!
 - **Tim Yang**
   - Email: [timyang@csus.edu](mailto:timyang@csus.edu)
   - GitHub: [Tim Yang](https://github.com/timyang-bait)
-    **Gurinderpreet Singh**
+- **Gurinderpreet Singh**
   - Email: [gsingh31@csus.edu](mailto:gsingh31@csus.edu)
   - GitHub: [GurinderpreetSingh](https://github.com/GurinderpreetSingh)
 
