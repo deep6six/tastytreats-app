@@ -34,7 +34,7 @@ TastyTreat is a web application designed to streamline restaurant operations, in
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/tastytreat.git
+   git clone https://github.com/deep6six/tastytreats-app.git
    ```
 
 ## Usage
