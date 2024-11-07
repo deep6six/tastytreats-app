@@ -6,7 +6,10 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo">
-        <h1>TastyTreats LOGO</h1>
+        <img
+          src={`${process.env.PUBLIC_URL}/tastytreatslogo.jpg`}
+          alt="TastyTreats LOGO"
+        />
       </div>
       <Navbar />
     </header>
