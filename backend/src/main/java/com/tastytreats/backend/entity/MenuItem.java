@@ -22,6 +22,7 @@ public class MenuItem {
 	public enum Category { APPETIZERS, ENTREES, SIDES, DESSERTS, SALADS, BEVERAGES; }
 
 	private String title;
+	private String imageUrl;
 	private BigDecimal price;
 	private Integer quantity;
 	private AvailabilityStatus availabilityStatus;

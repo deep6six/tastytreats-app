@@ -13,6 +13,8 @@ public class MenuService {
 	@Autowired
 	private MenuRepository menuRepository;
 	
-	public List<MenuItem> allMenuItems() { return menuRepository.findAll(); }
+	public List<MenuItem> allMenuItems() { 
+		return menuRepository.findAll(); 	
+	}
 	
 }

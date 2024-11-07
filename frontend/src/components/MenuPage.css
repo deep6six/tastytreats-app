@@ -1,0 +1,44 @@
+.menuitems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .menuitem {
+    width: 200px;
+    padding: 0px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .menuitem img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 auto;
+  }
+  
+  .menuitem h2 {
+    margin: 10px 0;
+    font-size: clamp(14px, 4vw, 18px);
+    line-height: 1.2;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .menuitem p {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 14px;
+  }
+  
