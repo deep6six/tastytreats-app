@@ -1,3 +1,4 @@
+
 import React from 'react'
 import rectangle110 from "../components/Rectangle 110.png";
 import "./ContactPage.css";
@@ -18,5 +19,11 @@ function ContactPage() {
     
   )
 }
+import React from "react";
 
-export default ContactPage
+const ContactPage = () => {
+  return <div>ContactPage</div>;
+};
+
+
+export default ContactPage;

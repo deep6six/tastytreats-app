@@ -29,6 +29,9 @@ const Navbar = () => {
         <li>
           <Link to="/order" className="navbar-link">
             Order
+          <Link to="/login" className="navbar-link">
+            Login
+ 
           </Link>
         </li>
       </ul>
