@@ -1,0 +1,186 @@
+.contactPage {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: 271px;
+  }
+  
+  .contentSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .decorativeImage {
+    width: 97px;
+    aspect-ratio: 1.311;
+  }
+  
+  .pageTitle {
+    color: #85144b;
+    font: 400 75px Inter, sans-serif;
+    margin: 20px 0;
+  }
+  
+  .contactContainer {
+    background-color: #fff;
+    border: 27px solid #85144b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 118px 80px;
+    width: 1137px;
+    max-width: 100%;
+    font: 400 32px Inter, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .contactPage {
+      padding-bottom: 100px;
+    }
+  
+    .pageTitle {
+      font-size: 40px;
+    }
+  
+    .contactContainer {
+      padding: 100px 20px;
+    }
+  }
+  .header {
+    background-color: #85144b;
+    display: flex;
+    width: 100%;
+    padding-top: 41px;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .nav {
+    margin-right: 126px;
+  }
+  
+  .menuButton {
+    color: #fff;
+    font: 400 36px/1 Inter, sans-serif;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .headerContent {
+    align-self: flex-start;
+    z-index: 10;
+    display: flex;
+    margin-top: -77px;
+    width: 1208px;
+    max-width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .brandName {
+    color: #fff;
+    font: 400 75px Inter, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .nav {
+      margin-right: 10px;
+    }
+  
+    .brandName {
+      max-width: 100%;
+      font-size: 40px;
+    }
+  }
+
+  .logoContainer {
+    display: flex;
+  }
+  
+  .logoImage {
+    aspect-ratio: 0.77;
+    object-fit: contain;
+    width: 105px;
+    max-width: 100%;
+  }
+  
+  .logoWrapper {
+    position: relative;
+    aspect-ratio: 0.809;
+    width: 110px;
+    overflow: hidden;
+  }
+  
+  .logoBackground {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .contactInfo {
+    display: flex;
+    flex-direction: column;
+    width: 805px;
+    max-width: 100%;
+  }
+  
+  .contactTitle {
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  .contactDetails {
+    display: flex;
+    gap: 20px;
+    color: #000;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .contactLabel {
+    margin-top: 69px;
+  }
+  
+  .contactValue {
+    margin-top: 57px;
+  }
+  
+  @media (max-width: 991px) {
+    .contactInfo {
+      margin-bottom: 10px;
+    }
+  
+    .contactLabel {
+      margin-top: 40px;
+    }
+  
+    .contactValue {
+      margin-top: 40px;
+    }
+  }
+
+  .reviewButton {
+    background-color: #85144b;
+    color: #fff;
+    padding: 20px 70px;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    margin-top: 243px;
+    width: 490px;
+    max-width: 100%;
+  }
+  
+  @media (max-width: 991px) {
+    .reviewButton {
+      margin-top: 40px;
+      padding: 20px;
+    }
+  }
