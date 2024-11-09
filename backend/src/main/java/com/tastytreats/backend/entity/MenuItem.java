@@ -27,5 +27,4 @@ public class MenuItem {
 	private Integer quantity;
 	private AvailabilityStatus availabilityStatus;
 	private Category category;
-	
 }
