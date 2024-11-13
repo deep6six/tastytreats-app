@@ -1,16 +1,6 @@
 
 import React from 'react'
-import rectangle110 from "../components/Rectangle 110.png";
-import "./ContactPage.css";
 
-
-export const Box = () => {
-  return (
-    <div className="box">
-      <img className="rectangle" alt="Rectangle" src={rectangle110} />
-    </div>
-  );
-};
 function ContactPage() {
   return (
     <div>ContactPage
@@ -19,11 +9,6 @@ function ContactPage() {
     
   )
 }
-import React from "react";
-
-const ContactPage = () => {
-  return <div>ContactPage</div>;
-};
 
 
 export default ContactPage;

@@ -1,4 +1,5 @@
 package com.tastytreats.backend.entity;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -7,19 +8,16 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 
-import java.math.BigDecimal;
 
-
-@Document(collection = "orders")
+@Document(collection = "reviews")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Order {
+public class Review {
     @Id
     private ObjectId id;
-    private String firstName;
-    private String lastName;
-    private BigDecimal price;
-
+    private Long customerId;
+    private String reviewBody;
+    private int rating;
 
 }

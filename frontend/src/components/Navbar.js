@@ -29,8 +29,13 @@ const Navbar = () => {
         <li>
           <Link to="/order" className="navbar-link">
             Order
+            </Link>
           <Link to="/login" className="navbar-link">
             Login
+ 
+          </Link>
+          <Link to="/review" className="navbar-link">
+            CustomerReview
  
           </Link>
         </li>

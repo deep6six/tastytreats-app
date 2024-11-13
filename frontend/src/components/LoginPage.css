@@ -1,0 +1,352 @@
+.frame {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  .frame .div {
+    background-color: #ffffff;
+    height: 1085px;
+    overflow: hidden;
+    position: relative;
+    width: 1440px;
+  }
+  .frame .overlap {
+    height: 129px;
+    left: 0;
+    position: absolute;
+    top: 7px;
+    width: 1439px;
+  }
+  .frame .text-wrapper {
+    color: #ffffff;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 75px;
+    font-weight: 400;
+    left: 26px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 11px;
+    white-space: nowrap;
+    width: 411px;
+  }
+  .frame .material-symbols {
+    height: 20px;
+    left: 445px;
+    position: absolute;
+    top: 48px;
+    width: 24px;
+  }
+  .frame .rectangle {
+    height: 129px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1439px;
+  }
+  .frame .akar-icons-three-wrapper {
+    background-color: #85144b;
+    border: 3px solid;
+    border-color: #000000;
+    height: 129px;
+    left: 1px;
+    position: absolute;
+    top: 0;
+    width: 106px;
+  }
+  .frame .akar-icons-three {
+    height: 45px !important;
+    left: 23px !important;
+    position: absolute !important;
+    top: 55px !important;
+    width: 49px !important;
+  }
+  .frame .user-instance {
+    height: 128px !important;
+    left: 107px !important;
+    position: absolute !important;
+    top: 1px !important;
+    width: 106px !important;
+  }
+  .frame .image {
+    height: 128px;
+    left: 675px;
+    object-fit: cover;
+    position: absolute;
+    top: 1px;
+    width: 126px;
+  }
+  .frame .navigation-pill-list {
+    align-items: flex-start;
+    border: 3px solid;
+    border-color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 8px;
+    height: 128px;
+    left: 1229px;
+    position: absolute;
+    top: 1px;
+    width: 109px;
+  }
+  .frame .navigation-pill-2 {
+    border-radius: var(--size-radius-200);
+    flex: 0 0 auto;
+    gap: var(--size-space-200);
+    position: relative;
+  }
+  .frame .shopping-cart {
+    height: 128px !important;
+    left: 1334px !important;
+    position: absolute !important;
+    top: 1px !important;
+    width: 105px !important;
+  }
+  
+  .frame .tasty-treat {
+    color: #ffffff;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 75px;
+    font-weight: 400;
+    left: 469px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 18px;
+    white-space: nowrap;
+    width: 568px;
+  }
+  .frame .text-wrapper-2 {
+    color: #ffffff;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 36px;
+    font-weight: 400;
+    height: 30px;
+    left: 1234px;
+    letter-spacing: 0;
+    line-height: 36px;
+    position: absolute;
+    top: 49px;
+    white-space: nowrap;
+    width: 100px;
+  }
+  .frame .navigation-pill-wrapper {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 8px;
+    height: 69px;
+    left: 1549px;
+    position: absolute;
+    top: 55px;
+    width: 114px;
+  }
+  .frame .navigation-pill-instance {
+    background-color: unset !important;
+    flex: 0 0 auto !important;
+    margin-right: -13.00px !important;
+  }
+  .frame .design-component-instance-node {
+    color: #ffffff !important;
+    font-family: "Inter-Regular", Helvetica !important;
+    font-size: 42px !important;
+    font-style: unset !important;
+    font-weight: 400 !important;
+    letter-spacing: 0 !important;
+    line-height: 42px !important;
+  }
+  .frame .overlap-group {
+    background-color: #ffffff;
+    border: 14px solid;
+    border-color: #85144b;
+    height: 545px;
+    left: 457px;
+    position: absolute;
+    top: 321px;
+    width: 525px;
+  }
+  .frame .button {
+    all: unset;
+    align-items: center;
+    background-color: #85144b;
+    border: 1px solid;
+    border-color: #d9d9d9;
+    border-radius: var(--size-radius-200);
+    box-sizing: border-box;
+    display: flex;
+    gap: var(--size-space-200);
+    height: 43px;
+    justify-content: center;
+    left: 282px;
+    padding: var(--size-space-300);
+    position: absolute;
+    top: 297px;
+    width: 125px;
+  }
+  .frame .button-2 {
+    all: unset;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 21px;
+    margin-top: -2.00px;
+    position: relative;
+    white-space: nowrap;
+  width: fit-content;
+  }
+  .frame .button-wrapper {
+    all: unset;
+    align-items: center;
+    background-color: #85144b;
+    border: 1px solid;
+    border-color: #d9d9d9;
+    border-radius: var(--size-radius-200);
+    box-sizing: border-box;
+    display: flex;
+    gap: var(--size-space-200);
+    height: 43px;
+    justify-content: center;
+    left: 184px;
+    padding: var(--size-space-300);
+    position: absolute;
+    top: 368px;
+    width: 125px;
+  }
+  .frame .button-3 {
+    all: unset;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 21px;
+    margin-top: -2.00px;
+    position: relative;
+    text-decoration: underline;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  .frame .div-wrapper {
+    all: unset;
+    align-items: center;
+    border: 1px solid;
+    border-color: transparent;
+    border-radius: var(--size-radius-200);
+    box-sizing: border-box;
+    display: flex;
+    gap: var(--size-space-200);
+    height: 30px;
+    justify-content: center;
+    left: 205px;
+    padding: var(--size-space-300);
+    position: absolute;
+    top: 424px;
+    width: 81px;
+  }
+  .frame .button-4 {
+    all: unset;
+    box-sizing: border-box;
+    color: #85144b;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 16px;
+    margin-bottom: -4.00px;
+    margin-left: -3.00px;
+    margin-right: -3.00px;
+    margin-top: -6.00px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  .frame .text-wrapper-3 {
+    color: #000000;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    left: 133px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 39px;
+    white-space: nowrap;
+    width: 237px;
+  }
+  .frame .text-wrapper-4 {
+    color: #000000;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 72px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 94px;
+    white-space: nowrap;
+  width: 153px;
+  }
+  .frame .rectangle-2 {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #85144b;
+    height: 49px;
+    left: 72px;
+    position: absolute;
+    top: 119px;
+    width: 350px;
+  }
+  .frame .text-wrapper-5 {
+    color: #000000;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 72px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 215px;
+    width: 139px;
+  }
+  .frame .rectangle-3 {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #85144b;
+    height: 51px;
+    left: 72px;
+    position: absolute;
+    top: 241px;
+    width: 350px;
+  }
+  .frame .button-5 {
+    all: unset;
+    align-items: center;
+    background-color: #85144b;
+    border: 1px solid;
+    border-color: #d9d9d9;
+    border-radius: var(--size-radius-200);
+    box-sizing: border-box;
+    display: flex;
+    gap: var(--size-space-200);
+    height: 43px;
+    justify-content: center;
+    left: 79px;
+    padding: var(--size-space-300);
+    position: absolute;
+    top: 297px;
+    width: 125px;
+  }
+  .frame .ion-arrow-back {
+    height: 62px !important;
+    left: 0 !important;
+    position: absolute !important;
+    top: 154px !important;
+    width: 97px !important;
+  }

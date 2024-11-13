@@ -12,7 +12,5 @@ import java.util.List;
 public class OrderService {
     @Autowired
     private OrderRepository orderRepository;
-    public List<Order> allOrders() {
-        return orderRepository.findAll();
-    }
+    public List<Order> getAllOrders() {return orderRepository.findAll();}
 }

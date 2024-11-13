@@ -10,10 +10,11 @@ import ContactPage from "./components/ContactPage";
 import AboutPage from "./components/AboutPage";
 import Header from "./components/Header";
 
-import OrderPage from "./components/OrderPage";
+import OrderPage from "./components/OrderPage"; 
 
 import LoginPage from "./components/LoginPage";
 import RegistrationPage from "./components/RegistrationPage";
+import CustomerReviewPage from "./components/CustomerReviewPage";
  
 
 function App() {
@@ -32,7 +33,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegistrationPage />} />
-
+          <Route path="/review" element={<CustomerReviewPage />} />
         </Routes>
       </div>
     </Router>

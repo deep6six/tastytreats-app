@@ -78,6 +78,7 @@ const RegistrationPage = () => {
           <Button variant="secondary" onClick={closeModal}>
             Close
           </Button>
+          <Form></Form>
         </Modal.Footer>
       </Modal>
     </div>
