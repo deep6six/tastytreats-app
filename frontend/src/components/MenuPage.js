@@ -21,6 +21,11 @@ const MenuPage = () => {
       });
   }, []);
 
+  // Adds selected Menu item to localstorage 
+  const addToLocalStorage = (menuItem) => {
+    localStorage.setItem(menuItem.title, JSON.stringify(menuItem));
+  };
+
   return (
     <div>
       <h1>Menu</h1>
@@ -32,6 +37,7 @@ const MenuPage = () => {
             <img src={menuitem.imageUrl} alt={menuitem.title} />
             <h2>{menuitem.title}</h2>
             <p>Price: ${menuitem.price}</p>
+            <button onClick={() => addToLocalStorage(menuitem, 1)}>Add to Cart</button>
           </div>
         ))}
       </div>
