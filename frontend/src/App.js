@@ -15,7 +15,7 @@ import OrderPage from "./components/OrderPage";
 import LoginPage from "./components/LoginPage";
 import RegistrationPage from "./components/RegistrationPage";
 import CustomerReviewPage from "./components/CustomerReviewPage";
- 
+import WriteReview from "./components/WriteReview";
 
 function App() {
   return (
@@ -34,6 +34,7 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegistrationPage />} />
           <Route path="/review" element={<CustomerReviewPage />} />
+          <Route path="/reviews" element={<WriteReview />} />
         </Routes>
       </div>
     </Router>
