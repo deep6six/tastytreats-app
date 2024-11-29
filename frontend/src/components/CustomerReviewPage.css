@@ -1,193 +1,6 @@
-.container1 {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-  }
-  
 
-  
-  @media (max-width: 991px) {
-    .header {
-      max-width: 100%;
-    }
-  }
-  
-  .headerContent {
-    background-color: #85144b;
-    z-index: 10;
-    display: flex;
-    margin-bottom: -4px;
-    width: 100%;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 1px;
-  }
-  
-  @media (max-width: 991px) {
-    .headerContent {
-      max-width: 100%;
-    }
-  }
-  
-  .logoContainer {
-    display: flex;
-  }
-  
-  .logo {
-    aspect-ratio: 0.76;
-    object-fit: contain;
-    object-position: center;
-   
-    
-  }
-  
-  .secondaryLogo {
-    aspect-ratio: 0.83;
-    object-fit: contain;
-    object-position: center;
-    width: 113px;
-    max-width: 100%;
-  }
-  
-  .brandName {
-    color: #ffffff;
-    align-self: start;
-    margin-top: 17px;
-    font: 400 75px Inter, sans-serif;
-  }
-  
-  @media (max-width: 991px) {
-    .brandName {
-      max-width: 100%;
-      font-size: 40px;
-    }
-  }
-  
-  .menuContainer {
-    display: flex;
-  }
-  
-  .menuWrapper {
-    z-index: 10;
-    display: flex;
-    padding-top: 40px;
-    flex-direction: column;
-  }
-  
-  @media (max-width: 991px) {
-    .menuWrapper {
-      margin-right: -5px;
-    }
-  }
-  
-  .menuTitle {
-    color: #ffffff;
-    align-self: start;
-    z-index: 10;
-    margin: 40px 0 0 10px;
-    font: 400 36px/1 Inter, sans-serif;
-  }
-  
-  .navigationList {
-    display: flex;
-    margin-top: -76px;
-    min-height: 135px;
-    width: 100%;
-    align-items: start;
-    gap: 8px;
-    justify-content: start;
-    flex-wrap: wrap;
-    border: 3px solid #000000;
-  }
-  
-  .navigationItem {
-    border-radius: 8px;
-    background-color: rgba(133, 20, 75, 0);
-    display: flex;
-    min-height: 32px;
-    gap: 8px;
-    padding: 8px 0;
-  }
-  
-  .tertiaryLogo {
-    aspect-ratio: 0.84;
-    object-fit: contain;
-    object-position: center;
-    width: 113px;
-    max-width: 100%;
-  }
-  
-  .decorativeImage {
-    aspect-ratio: 1.31;
-    object-fit: contain;
-    object-position: center;
-    width: 97px;
-  }
-  
-  .reviewSection {
-    display: flex;
-    flex-direction: column;
-    border-radius: 1px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.73);
-    align-self: center;
-    position: relative;
-    min-height: 636px;
-    margin-top: 96px;
-    width: 958px;
-    max-width: 100%;
-    align-items: start;
-    padding: 45px 80px 73px;
-  }
-  
-  @media (max-width: 991px) {
-    .reviewSection {
-      margin-top: 40px;
-      padding: 0 20px;
-    }
-  }
 
-  
-  @media (max-width: 991px) {
-    .submitButton {
-      max-width: 100%;
-      white-space: initial;
-      padding: 0 20px;
-    }
-  }
-  
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-  }
-
-  /* OTHER CSS */ 
-
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 190px;
-    max-width: 400px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-  }
-  
-  input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  
+  /* OTHER CSS TIM */ 
   button {
     padding: 10px;
     background-color: #85144B;
@@ -195,10 +8,11 @@
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    font-size: 40px;
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: black;
   }
   
   .review {
@@ -227,3 +41,106 @@
     top: 0;
     width: 984px;
   }
+ 
+
+    
+  /*Cosumer Review Box*/ 
+  .container4 {
+    display: flex;
+    justify-content: center; /* Aligns horizontally */
+    align-items: center; /* Aligns vertically */
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+  }
+
+  .label {
+  height: 91px;
+  width: 660px;
+}
+.label .customer-reviews {
+  height: 57px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 652px;
+}
+
+.review-container {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px; /* Space for the button */
+  overflow-y: scroll; /* Make sure this is set */
+  max-height: 50px; /* Adjust as needed */
+}
+.container4 {
+  padding: 20px;
+
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.outer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 29px;
+padding-top: 100px;
+padding-bottom: 100px; 
+  max-height: 5090px; /* Adjust this as needed */
+  overflow-y: auto; /* Allows scrolling */
+  box-shadow: 0 10px 19px rgba(0, 0, 0, 0.1); /* Optional: add a shadow */
+}
+
+
+.containerh {
+  display: flex;
+  padding-top: 200px;
+  justify-content: center;
+  color: #85144B;
+  height: 10px; /* Adjust the height as needed */
+  font-family: 'Times New Roman', Times, serif;                     
+}
+.h1{
+  font-size: 35px ;
+}
+
+.review-container {
+
+  
+  padding: 100px; /* Add padding inside the container */
+  border: 2px solid #ddd; /* Border around the container */
+  border-radius: 8px; /* Optional: add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+  background-color: #85144B;
+  
+  max-height: 1000px; /* The container height that shows only a portion of the reviews */
+  
+}
+
+/* Styling for individual review items */
+.review-container ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 20px;
+  width: 2000px;
+}
+
+.review-container li {
+  margin-bottom: 10px; /* Space between each review */
+  padding: 10px; /* Increase padding for more space */
+  border-bottom: 1px solid #ddd; /* Add a border between reviews */
+  background-color: #f9f9f9; /* Optional: add background color */
+  border-radius: 5px; /* Optional: rounded corners for individual items */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Optional: add a subtle shadow */
+  flex:auto;
+}
+.right-corner {
+ 
+  text-align: right ; 
+
+  font-size: 40px;
+  color: #888;
+}
+

@@ -736,7 +736,7 @@ function CustomerReviewPage() {
 
 
 
-import React, { useState, useEffect } from "react";
+/*import React, { useState, useEffect } from "react";
 import axios from "axios";
  import "./CustomerReviewPage.css";
  import { Link } from "react-router-dom";
@@ -856,5 +856,99 @@ const CustomerReviewPage = () => {
     );
 };
 
+
+export default CustomerReviewPage;*/
+import React, { useState, useEffect, useCallback } from "react";
+import axios from "axios";
+import "./CustomerReviewPage.css";
+import { Link } from "react-router-dom";
+import sampleImage from "./CustomerReview/Customer Reviews.png";
+
+const CustomerReviewPage = () => {
+    const [reviews, setReviews] = useState([]);
+    const [error, setError] = useState('');
+    const [visibleCount, setVisibleCount] = useState(100); // Number of reviews to display initially
+
+    useEffect(() => {
+        const fetchReviews = async () => {
+            try {
+                const response = await axios.get('http://localhost:8080/review');
+                setReviews(response.data);
+            } catch (error) {
+                console.error('There was an error fetching the reviews!', error);
+                setError('There was an error fetching the reviews.');
+            }
+        };
+
+        fetchReviews();
+    }, []);
+
+    const loadMoreReviews = useCallback(() => {
+        setVisibleCount((prevCount) => Math.min(prevCount + 3, reviews.length));
+    }, [reviews]);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const container = document.querySelector('.review-container');
+            if (container && container.scrollTop === 0) {
+                // Load more reviews when scrolled to the top
+                loadMoreReviews();
+            }
+        };
+
+        const container = document.querySelector('.review-container');
+        if (container) {
+            container.addEventListener('scroll', handleScroll);
+        }
+
+        return () => {
+            if (container) {
+                container.removeEventListener('scroll', handleScroll);
+            }
+        };
+    }, [loadMoreReviews, reviews]);
+
+    // Function to render stars based on the rating
+    const renderStars = (rating) => {
+        return Array.from({ length: 5 }, (_, index) => (
+            <span key={index} style={{ color: index < rating ? '#85144B' : '#ddd' }}>
+                ★
+            </span>
+        ));
+    };
+
+    return (
+        <div>
+            <div className="containerh">
+                <h1><img src={sampleImage} alt="Sample" /></h1>
+            </div>
+            <div className="container4">
+                <div className="outer-container">
+                    {error && <p style={{ color: 'red' }}>{error}</p>}
+                    <div className="review-container">
+                        <ul>
+                            {/* Display only the reviews up to a certain count */}
+                            {reviews.slice(0, visibleCount).map((review) => (
+                                <li key={review._id} style={{ marginBottom: '20px', borderBottom: '1px solid #ddd' }}>
+                                    <div className="right-corner">
+                                        <span style={{ fontSize: '0.9em', color: '#888' }}>{review.createdDate}</span>
+                                    </div>
+                                    <h2>Review Title: {review.reviewTitle}</h2>
+                                    <div>
+                                        <p>Rating: {renderStars(review.rating)}</p>
+                                    </div>
+                                    <p>Review Body: {review.reviewBody}</p>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    <Link to="/reviews" style={{ marginTop: '10px' }}>
+                        <button type="button">Submit A Review</button>
+                    </Link>
+                </div>
+            </div>
+        </div>
+    );
+};
 
 export default CustomerReviewPage;
