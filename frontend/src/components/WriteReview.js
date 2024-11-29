@@ -213,6 +213,7 @@ const CustomerReviewPage = () => {
                             value={reviewTitle}
                             onChange={(e) => setReviewTitle(e.target.value)}
                             required
+                                  placeholder="Write a title"
                         />
                     </div>
                     <div>
@@ -221,6 +222,7 @@ const CustomerReviewPage = () => {
                             value={reviewBody}
                             onChange={(e) => setReviewBody(e.target.value)}
                             required
+                            placeholder="Review body"
                         />
                     </div>
                     <button type="submit">Submit Review</button>

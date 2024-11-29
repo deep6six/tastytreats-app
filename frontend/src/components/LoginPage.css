@@ -350,3 +350,109 @@
     top: 154px !important;
     width: 97px !important;
   }*/
+
+  
+ /* Styles for the whole container */
+
+
+/* Styles for the form container */
+/* Style for the main form container */
+/* Style for the main form container */
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  font-size: 40px;
+}
+
+/* Style for the form */
+.loginForm {
+  width: 777px; /* Sets a max width for the form */
+  padding: 30px; /* Increased padding */
+  background-color: #ffffff; /* White background */
+  border: 15px solid #85144B; /* Border for the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Styling for the contact box */
+.Box2Log {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header styling */
+.Head2Log {
+  text-align: center;
+  margin-bottom: 30px; /* Increased margin for more spacing */
+  font-size: 3.5rem; /* Larger font size */
+}
+
+/* General styling for form elements */
+.input-field {
+  width: 100%;
+  height: 80px; /* Increased height */
+  padding: 10px; /* More padding */
+  margin-bottom: 15px; /* Increased margin */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1.2rem; /* Larger font size */
+}
+
+/* Button group styling */
+.button-groupLog {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Increased margin */
+  
+}
+
+.employee-button,
+.admin-button {
+  height: 80px; /* Increased height */
+  padding: 12px; /* More padding */
+  border: 1px solid #85144B;
+  background-color: #85144B;
+  color: white;
+  cursor: pointer;
+  flex: 0.4;
+  margin: 0 5px; /* Space between buttons */
+  font-size:2rem; /* Larger font size */
+  transition: background-color 0.3s;
+  border-radius: 8px;
+}
+
+.employee-button:hover,
+.admin-button:hover {
+  background-color: black;
+  border-color: black;
+}
+
+/* Login button styling */
+.login-button {
+
+  width: 100%; /* Full width */
+  height: 80px; /* Increased height */
+  padding: 12px; /* More padding */
+  background-color: #85144B; /* Color */
+  color: white;
+
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px; /* Increased margin */
+  font-size: 2rem; /* Larger font size */
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: black; /* Darker color on hover */
+}
+
+/* Styling for the register link */
+.register-linkLog {
+  text-align: center;
+  margin-top: 20px; /* Increased margin */
+  font-size: 2rem; /* Larger font size */
+  color: rgb(133, 20, 75);
+}
