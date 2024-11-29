@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./ShoppingCart.css"
 
 const ShoppingCart = () => {
-    const [cartItems, setCartItems] = useState(Object.entries({...localStorage}));
+    const [cartItems, setCartItems] = useState([]);
   
     useEffect(() => {
       let cartItems = JSON.parse(localStorage.getItem('items')) || [];
