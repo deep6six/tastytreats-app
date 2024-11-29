@@ -1,9 +1,10 @@
 
-import React from "react";
+import React from 'react'
+
 import { Link } from "react-router-dom"; 
 import "./ContactPage.css";
 
-function ContactPage() {
+function ContactPage(){
   return (
     <div className="whole">
       <h1 className = "contactHead"> Get In Contact</h1>
@@ -19,9 +20,8 @@ function ContactPage() {
           </button>
       </div>
     </div>
-    
+  
   )
-}
+  }
+  export default ContactPage
 
-
-export default ContactPage;

@@ -50,15 +50,7 @@
       padding: 100px 20px;
     }
   }
-  .header {
-    background-color: #85144b;
-    display: flex;
-    width: 100%;
-    padding-top: 41px;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  
+ 
   .nav {
     margin-right: 126px;
   }
@@ -185,6 +177,61 @@
       padding: 20px;
     }
   }
+
+
+
+  /* CSS FROM ERIKS CONTACT PAGE*/ 
+
+  .contactHead{
+    color: rgb(133, 20, 75);
+    font-size: 3rem;
+    padding: 10px 20px;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+  }
+  
+  .contactCont{
+    margin:auto;
+    border: 10px solid rgb(133,20,75);
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 30rem;
+    font-size: 2rem;
+    overflow: hidden;
+  }
+  
+  .contactBox{
+    margin-top: 1rem;
+    width: 75%;
+    color: aliceblue;
+    background-color: rgb(133, 20, 75);
+    display: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  .emailBox{
+    overflow: hidden;
+    width: 75%;
+    text-align: center;
+    color: aliceblue;
+    margin: 2rem 2rem;
+    background-color: rgb(133, 20, 75);
+    display: center;
+  }
+  .review1{
+    overflow: hidden;
+    margin-top: 2rem;
+    background-color: rgb(133, 20, 75);
+    color: aliceblue;
+  }
+  
+  
+
     */
 .contactHead{
   color: rgb(133, 20, 75);
@@ -231,3 +278,4 @@
   background-color: rgb(133, 20, 75);
   color: aliceblue; 
 }
+

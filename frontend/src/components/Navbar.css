@@ -1,17 +1,13 @@
-.navbar {
-  background-color: #333;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
+
+z
 .navbar-links {
   list-style: none;
   display: flex;
-  gap: 20px;
   margin: 0;
   padding: 0;
+
+  
 }
 
 .navbar-link {
@@ -22,19 +18,139 @@
   padding: 8px 12px;
   border-radius: 4px;
   transition: background-color 0.3s ease;
+  margin:0;
+
+}
+.navbar-link1{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding: 65px 0px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  margin:0;
 }
 
 .navbar-link:hover {
   background-color: #555;
 }
+.navbar-link1:hover {
+  background-color: #581010;
+}
 
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
+    align-items: flex-start;
+    margin: 0px;
+    
   }
 
   .navbar-links {
     flex-direction: column;
     gap: 10px;
+    margin: 0px;
   }
 }
+
+
+.user-image {
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+  display: inline-block;
+  border: 6px solid black;
+  padding: 5px;
+  margin: 0;
+  
+  
+}
+
+.icon {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center icon content vertically */
+  justify-content: center; /* Center icon content horizontally */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  background-color: #85144B; /* Match the background color of the bar */
+  display: inline-block; 
+  margin: 0px;
+}
+.downscroll-image {
+  width: auto;
+  height: auto;
+  margin: 0px;
+  border: 6px solid black;
+ 
+  padding: 50px;
+  display: inline-block;
+  box-sizing: border-box;
+  
+}
+
+.right-icon {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center icon content vertically */
+  justify-content: center; /* Center icon content horizontally */
+ margin: 0px;
+}
+.iconr {
+
+  border: 8px solid black;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  margin: 0px;
+  padding-bottom: 10px;
+}
+.iconr2 {
+
+  border: 8px solid black;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  padding-top: 50px;
+  padding-bottom: 69px;
+  margin: 0px;
+
+}
+.iconr4 {
+
+  border: 8px solid black;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+ padding: 4.6px;
+  margin: 0px;
+
+}
+.iconr3 {
+
+  border: 8px solid black;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  padding: 50px;
+  margin: 0;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  margin: 0px;
+}
+
+.item {
+  width: 200px;
+  height: 100px;
+  background-color: #4CAF50; /* Green background color */
+  color: white; /* White text color */
+  display: flex;
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  font-size: 20px; /* Larger text size */
+  border-radius: 10px; /* Rounded corners */
+}
+
+
+/* .navbar {
+  background-color: #333;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  
+}*/
