@@ -71,7 +71,7 @@
   padding: 10px;
   margin-bottom: 10px; /* Space for the button */
   overflow-y: scroll; /* Make sure this is set */
-  max-height: 50px; /* Adjust as needed */
+  max-height: 50px; 
 }
 .container4 {
   padding: 20px;
@@ -89,7 +89,7 @@
 padding-top: 100px;
 padding-bottom: 100px; 
   max-height: 5090px; /* Adjust this as needed */
-  overflow-y: auto; /* Allows scrolling */
+ 
   box-shadow: 0 10px 19px rgba(0, 0, 0, 0.1); /* Optional: add a shadow */
 }
 

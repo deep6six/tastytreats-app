@@ -122,9 +122,9 @@ import "./WriteReview.css";
 
 const CustomerReviewPage = () => {
     const [customerId, setCustomerId] = useState('');
-    const [reviewTitle, setReviewTitle] = useState(''); // New state for review title
+    const [reviewTitle, setReviewTitle] = useState('');
     const [reviewBody, setReviewBody] = useState('');
-    const [rating, setRating] = useState(1); // Default rating to 1
+    const [rating, setRating] = useState(1);
     const [error, setError] = useState('');
     const [success, setSuccess] = useState('');
     const [reviews, setReviews] = useState([]);
@@ -160,7 +160,7 @@ const CustomerReviewPage = () => {
             setCustomerId('');
             setReviewTitle('');
             setReviewBody('');
-            setRating(1); // Reset to default rating
+            setRating(1);
         } catch (error) {
             console.error('There was an error submitting the review!', error);
             setError('There was an error submitting the review.');
@@ -180,73 +180,78 @@ const CustomerReviewPage = () => {
     };
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <h1>Customer Review</h1>
-            <div className="parent-container">
-            <div className="outer-container1">
-                <form onSubmit={handleSubmit} style={{ width: '50%', marginBottom: '20px' }}>
-                    <div>
-                        <label>Overall Rating:</label>
-                        <div style={{ display: 'flex', gap: '5px' }}>
-                            {[1, 2, 3, 4, 5].map((star) => (
-                                <button
-                                    type="button"
-                                    key={star}
-                                    style={{
-                                        background: star <= rating ? '#85144B' : '#ddd',
-                                        border: 'none',
-                                        borderRadius: '5px',
-                                        padding: '5px 10px',
-                                        cursor: 'pointer'
-                                    }}
-                                    onClick={() => setRating(star)}
-                                >
-                                    ★
-                                </button>
-                            ))}
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%', height: '100vh', }}>
+           <h1 className="write-review-title">Leave a Review</h1>
+            <div className="parent-container1" style={{ width: '60%', height: '75%', }}>
+                
+                <div className="outer-container2" style={{ width: '60%', height: '100%' }}>
+                    <form onSubmit={handleSubmit} style={{ width: '100%', marginBottom: '20px' }}>
+                        <div>
+                            <label style={{ fontSize: '32px' }}>Overall Rating:</label>
+                            <div style={{ display: 'flex', gap: '5px' }}>
+                                {[1, 2, 3, 4, 5].map((star) => (
+                                    <button
+                                        type="button"
+                                        key={star}
+                                        style={{
+                                            background: star <= rating ? '#85144B' : '#ddd',
+                                            border: 'none',
+                                            borderRadius: '5px',
+                                            padding: '10px 20px',
+                                            cursor: 'pointer'
+                                        }}
+                                        onClick={() => setRating(star)}
+                                    >
+                                        ★
+                                    </button>
+                                ))}
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <label>Review Title:</label>
-                        <input
-                            type="text"
-                            value={reviewTitle}
-                            onChange={(e) => setReviewTitle(e.target.value)}
-                            required
-                                  placeholder="Write a title"
-                        />
-                    </div>
-                    <div>
-                        <label>Review:</label>
-                        <textarea
-                            value={reviewBody}
-                            onChange={(e) => setReviewBody(e.target.value)}
-                            required
-                            placeholder="Review body"
-                        />
-                    </div>
-                    <button type="submit">Submit Review</button>
-                    {error && <p style={{ color: 'red' }}>{error}</p>}
-                    {success && (
-                        <div style={{ color: 'green', marginTop: '10px' }}>
-                            <h3>Submit Successful</h3>
-                            <p>Your submission has been submitted</p>
-                            <button onClick={() => setSuccess('')}>Close</button>
+                        <div>
+                            <label  style={{ fontSize: '32px' }} >Review Title:</label>
+                            <input
+                                type="text"
+                                value={reviewTitle}
+                                onChange={(e) => setReviewTitle(e.target.value)}
+                                required
+                                placeholder="Write a title..."
+                                style={{ width: '100%', padding: '10px', fontSize: '40px' }}
+                            />
                         </div>
-                    )}
-                </form>
-                <ul style={{ width: '50%' }}>
-                    {reviews.map((review) => (
-                        <li key={review.id}>
-                            <h3>{review.reviewTitle}</h3>
-                            <p>{review.reviewBody}</p>
-                            <p>Rating: {Array.from({ length: review.rating }).map((_, index) => '★')}</p> {/* Display stars */}
-                            <button onClick={() => handleDelete(review.id)}>Delete</button>
-                        </li>
-                    ))}
-                </ul>
+                        <div>
+                            <label style={{ fontSize: '32px' }}>Review:</label>
+                            <textarea
+                                value={reviewBody}
+                                onChange={(e) => setReviewBody(e.target.value)}
+                                required
+                                placeholder="Leave a review body..."
+                                style={{ width: '100%', height: '600px', margin: '10px 0', padding: '10px', fontSize: '40px' }}
+                            />
+                        </div>
+                        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                            <button type="submit" style={{ padding: '10px 20px', fontSize: '40  px' }}>Submit Review</button>
+                        </div>
+                        {error && <p style={{ color: 'red' }}>{error}</p>}
+                        {success && (
+                            <div style={{ color: 'green', marginTop: '10px' }}>
+                                <h3>Submit Successful</h3>
+                                <p>Your submission has been submitted</p>
+                                <button onClick={() => setSuccess('')}>Close</button>
+                            </div>
+                        )}
+                    </form>
+                    <ul style={{ width: '100%' }}>
+                        {reviews.map((review) => (
+                            <li key={review.id} style={{ marginBottom: '20px' }}>
+                                <h3>{review.reviewTitle}</h3>
+                                <p>{review.reviewBody}</p>
+                                <p>Rating: {Array.from({ length: review.rating }).map((_, index) => '★')}</p>
+                                <button onClick={() => handleDelete(review.id)}>Delete</button>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
             </div>
-        </div>
         </div>
     );
 };

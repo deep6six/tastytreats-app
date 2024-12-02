@@ -363,11 +363,13 @@
   justify-content: center;
   align-items: center;
   height: 100vh; /* Full viewport height */
-  font-size: 40px;
+  font-size: 50px;
+  
 }
 
 /* Style for the form */
 .loginForm {
+ 
   width: 777px; /* Sets a max width for the form */
   padding: 30px; /* Increased padding */
   background-color: #ffffff; /* White background */
@@ -380,13 +382,14 @@
 .Box2Log {
   display: flex;
   flex-direction: column;
+  
 }
 
 /* Header styling */
 .Head2Log {
   text-align: center;
   margin-bottom: 30px; /* Increased margin for more spacing */
-  font-size: 3.5rem; /* Larger font size */
+  font-size: 4.5rem; /* Larger font size */
 }
 
 /* General styling for form elements */
@@ -397,20 +400,21 @@
   margin-bottom: 15px; /* Increased margin */
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 1.2rem; /* Larger font size */
+  font-size: 3 rem; /* Larger font size */
 }
 
 /* Button group styling */
 .button-groupLog {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px; /* Increased margin */
+  margin-bottom: 40px; /* Increased margin */
+  
   
 }
 
 .employee-button,
 .admin-button {
-  height: 80px; /* Increased height */
+  height: 100px; /* Increased height */
   padding: 12px; /* More padding */
   border: 1px solid #85144B;
   background-color: #85144B;
@@ -418,7 +422,7 @@
   cursor: pointer;
   flex: 0.4;
   margin: 0 5px; /* Space between buttons */
-  font-size:2rem; /* Larger font size */
+  font-size:3 rem; /* Larger font size */
   transition: background-color 0.3s;
   border-radius: 8px;
 }
@@ -433,7 +437,7 @@
 .login-button {
 
   width: 100%; /* Full width */
-  height: 80px; /* Increased height */
+  height: 100px; /* Increased height */
   padding: 12px; /* More padding */
   background-color: #85144B; /* Color */
   color: white;
@@ -441,7 +445,7 @@
   border-radius: 8px;
   cursor: pointer;
   margin-top: 15px; /* Increased margin */
-  font-size: 2rem; /* Larger font size */
+  font-size: 3rem; /* Larger font size */
   transition: background-color 0.3s;
 }
 

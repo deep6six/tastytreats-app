@@ -15,6 +15,10 @@
     border-radius: 5px;
     margin-bottom: 10px;
 }
+.write-review-title {
+    color: #85144B;
+    font-size: 100px; 
+}
 
 .button5 {
     padding: 10px;
@@ -25,7 +29,7 @@
     cursor: pointer;
     font-size: 40px;
 }
-.outer-container1 {
+.outer-container2 {
   display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,15 +37,23 @@
     border-radius: 29px;
     padding: 50px; /* Adjust padding as needed */
     max-height: 5090px; /* Adjust this as needed */
-    overflow-y: auto; /* Allows scrolling */
+  
     box-shadow: 0 10px 19px rgba(0, 0, 0, 0.1); /* Optional: add a shadow */
     gap: 20px; /* Space between items */
 }
-.parent-container {
-    display: flex;
+.parent-container1 {
+
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 800px;
+    padding-top: 200px;
+ 
+    border-radius: 10px;
 }
 
   .star-rating {
@@ -61,3 +73,4 @@
 .star.filled {
     color: gold;
 }
+
