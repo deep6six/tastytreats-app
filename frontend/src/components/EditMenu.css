@@ -1,0 +1,125 @@
+.edit-menu {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+.sidebar {
+    margin-top: -1.5rem;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.717);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed; 
+    height: 78vh;           
+    left: 0;        
+    padding: 0;
+}
+.sidebar-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.sidebar-button{
+    background-color: rgb(227, 160, 193);
+    border: none;
+    color: white;
+    margin: .5rem .5rem 0;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 90%;
+}
+.sidebar-button:hover {
+    background-color: rgb(207, 112, 160);
+}
+.back-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-align: center;
+    margin: .5rem .5rem ;
+}
+.back-button:hover {
+    background-color: #e53935;
+}
+h1{
+    margin-left: 250px;
+    background-color: rgb(174, 50, 110);
+    color: white;
+    padding: .5rem;
+    width: 100%;
+    border-radius: 8px;
+}
+.menu-items {
+    margin-left: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+  
+.menu-item {
+    width: 200px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+  
+.item-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+  
+.cost-input, .image-url-input {
+    margin: 5px 0;
+    padding: 8px;
+    width: 80%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+  
+.add-item-form {
+    margin-top: 40px;
+    margin-left: 250px;
+}
+  
+.add-item-form input {
+    margin: 5px 0;
+    padding: 8px;
+    width: 80%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+  
+.add-item-form  {
+    padding: 10px 20px;
+    background-color: rgb(174, 50, 110);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.addButton{
+    color: white;
+    margin-top: 1rem;
+    margin-left: 250px;
+    background-color: rgb(174, 50, 110);;
+}
+.addButton:hover{
+    background-color: rgb(145, 42, 92);
+}

@@ -1,0 +1,119 @@
+.new-employee-page {
+    display: flex;
+}
+.sidebar {
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.717);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed; 
+    height: 77vh;           
+    left: 0;
+    margin-top: -1vh;        
+    padding: 0;
+}
+.sidebar-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.sidebar-button{
+    background-color: rgb(227, 160, 193);
+    border: none;
+    color: white;
+    margin: .5rem .5rem 0;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 90%;
+}
+.sidebar-button:hover {
+    background-color: rgb(207, 112, 160);
+}
+.back-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-align: center;
+    margin: .5rem .5rem ;
+}
+.back-button:hover {
+    background-color: #e53935;
+}
+.form-container {
+    margin-left: 260px; 
+    padding: 20px;
+    width: calc(100% - 260px);
+}
+  
+h2 {
+    margin-bottom: 20px;
+    background-color: rgb(174, 50, 110);
+    color: white;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+  
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+  
+label {
+    font-weight: bold;
+    color: rgb(174, 50, 110);
+}
+  
+input {
+    padding: 8px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(174, 50, 110);
+    border-radius: 4px;
+}
+  
+button {
+    background-color: rgb(174, 50, 110);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: rgb(137, 36, 85);
+  }
+  
+popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+  
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+  
+.popup p {
+    font-size: 18px;
+    color: #333;
+}

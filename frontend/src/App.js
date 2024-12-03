@@ -17,6 +17,12 @@ import RegistrationPage from "./components/RegistrationPage";
 import CustomerReviewPage from "./components/CustomerReviewPage";
 import WriteReview from "./components/WriteReview";
 
+import AdminPage from "./components/AdminPage"; 
+import EmployeeManagement from "./components/EmployeeManagement"
+import NewEmployee from "./components/NewEmployee";
+import Scheduling from "./components/SchedulingPage";
+import EditMenu from "./components/EditMenu";
+
 function App() {
   return (
     <Router>
@@ -29,9 +35,15 @@ function App() {
 
           <Route path="/about" element={<AboutPage/>} />
           <Route path="/order" element={<OrderPage />} />
-
-          <Route path="/about" element={<AboutPage />} />
+        
           <Route path="/login" element={<LoginPage />} />
+
+          <Route path="/admin" element={<AdminPage />} />
+          <Route path="/employee_management" element={<EmployeeManagement />} />
+          <Route path="/new_employee" element={<NewEmployee />} />
+          <Route path="/scheduling" element={<Scheduling />} />
+          <Route path="/edit_menu" element={<EditMenu />} />
+
           <Route path="/register" element={<RegistrationPage />} />
           <Route path="/review" element={<CustomerReviewPage />} />
           <Route path="/reviews" element={<WriteReview />} />
