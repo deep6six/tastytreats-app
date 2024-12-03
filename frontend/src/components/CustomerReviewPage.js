@@ -938,7 +938,7 @@ const CustomerReviewPage = () => {
                                     <div>
                                         <p style={{ fontSize: '2.5em' }}>Rating: {renderStars(review.rating)}</p>
                                     </div>
-                                    <p style={{ fontSize: '2.5em' }}>Review Body: {review.reviewBody}</p>
+                                    <p style={{ fontSize: '2.5em' }}>Review: {review.reviewBody}</p>
                                 </li>
                             ))}
                         </ul>
