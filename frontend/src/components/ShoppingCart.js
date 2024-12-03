@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./ShoppingCart.css"
+import PayPalButtonsDisplay from "./PayPalButtonsDisplay";
 
 const ShoppingCart = () => {
     const [cartItems, setCartItems] = useState([]);
@@ -15,14 +16,15 @@ const ShoppingCart = () => {
         <div>
           <h1>Shopping Cart</h1>
           <div className="cartitems">
-            {cartItems.map((cartitem) => (
-              <div key={cartitem.id} className="cartitem">
+            {cartItems.map((cartitem, index) => (
+              <div key={index} className="cartitem">
                 <img src={cartitem.imageUrl} alt={cartitem.title} />
                 <h2>{cartitem.title}</h2>
                 <p>Price: ${cartitem.price}</p>
               </div>
             ))}
           </div>
+          <PayPalButtonsDisplay />
         </div>
       );
 };

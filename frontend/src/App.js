@@ -10,6 +10,7 @@ import ContactPage from "./components/ContactPage";
 import AboutPage from "./components/AboutPage";
 import Header from "./components/Header";
 import OrderPage from "./components/OrderPage"; 
+import ShoppingCart from "./components/ShoppingCart";
 import LoginPage from "./components/LoginPage";
 import RegistrationPage from "./components/RegistrationPage";
 import CustomerReviewPage from "./components/CustomerReviewPage";
@@ -36,6 +37,11 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/menu" element={<MenuPage />} />
           <Route path="/contact" element={<ContactPage />} />
+
+          <Route path="/about" element={<AboutPage/>} />
+          <Route path="/order" element={<OrderPage />} />
+          <Route path="/shoppingcart" element={<ShoppingCart />} />
+
           <Route path="/about" element={<AboutPage />} />
           <Route path="/order" element={<OrderPage />} />
         

@@ -25,7 +25,7 @@ public class WebSecurityConfig {
             return config;
         }))
         .authorizeHttpRequests(authz -> authz
-            .requestMatchers("/register", "/menu", "/order", "/review", "/reviews").permitAll()
+            .requestMatchers("/login, /register", "/menu", "/order", "/review", "/reviews").permitAll()
             .anyRequest().authenticated()
         );
         return httpSecurity.build();
