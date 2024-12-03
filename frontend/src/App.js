@@ -9,13 +9,15 @@ import MenuPage from "./components/MenuPage";
 import ContactPage from "./components/ContactPage";
 import AboutPage from "./components/AboutPage";
 import Header from "./components/Header";
-
 import OrderPage from "./components/OrderPage"; 
-
 import LoginPage from "./components/LoginPage";
 import RegistrationPage from "./components/RegistrationPage";
 import CustomerReviewPage from "./components/CustomerReviewPage";
 import WriteReview from "./components/WriteReview";
+
+// Import the new components
+import EmployeePage from "./components/EmployeePage";
+import EmployeeProfile from "./components/EmployeeProfile";
 
 function App() {
   return (
@@ -26,15 +28,16 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/menu" element={<MenuPage />} />
           <Route path="/contact" element={<ContactPage />} />
-
-          <Route path="/about" element={<AboutPage/>} />
-          <Route path="/order" element={<OrderPage />} />
-
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/order" element={<OrderPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegistrationPage />} />
           <Route path="/review" element={<CustomerReviewPage />} />
           <Route path="/reviews" element={<WriteReview />} />
+
+          {/* New Routes */}
+          <Route path="/employee" element={<EmployeePage />} />
+          <Route path="/employee-profile" element={<EmployeeProfile />} />
         </Routes>
       </div>
     </Router>
