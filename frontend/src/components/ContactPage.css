@@ -186,6 +186,8 @@
     }
   }
     */
+
+/*
 .contactHead{
   color: rgb(133, 20, 75);
   font-size: 3rem;
@@ -211,10 +213,11 @@
   margin-top: 1rem;
   width: 75%;
   color: aliceblue;
-  background-color: rgb(133, 20, 75);
+  background-color: rgb(174, 50, 110);
   display: center;
   text-align: center;
   overflow: hidden;
+  border-radius: 1rem;
 }
 .emailBox{
   overflow: hidden;
@@ -222,12 +225,163 @@
   text-align: center;
   color: aliceblue;
   margin: 2rem 2rem;
-  background-color: rgb(133, 20, 75);
+  background-color: rgb(174, 50, 110);
   display: center;
+  border-radius: 1rem;
 }
 .review{
   overflow: hidden;
   margin-top: 2rem;
-  background-color: rgb(133, 20, 75);
+  background-color: rgb(174, 50, 110);
   color: aliceblue; 
-}
+  border-radius: 1rem;
+} 
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .admin-page {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  
+  .sidebar button {
+    background-color: #444;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .sidebar button:hover {
+    background-color: #555;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .month-selector {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .month-selector button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .month-selector button:hover {
+    background-color: #007B9F;
+  }
+  
+  .revenue-display {
+    margin-top: 20px;
+  }
+  
+  .revenue-data {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  */
+
+  .admin-page {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    border-top-right-radius:1rem  ;
+    border-bottom-right-radius: 1rem;
+    width: 14rem;
+    background-color: rgb(227, 160, 193);
+    color: white;
+    padding: 1rem 1rem 1rem 1rem;
+    position:fixed;
+    height:100%;
+  }
+  
+  .sidebar-button {
+    border: 10px solid rgb(255, 1, 1);
+    display: block;
+    padding: 10px;
+    
+    background-color: #000000;
+    color: white;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .sidebar-btn:hover {
+    background-color: #1abc9c;
+  }
+  
+  .main-content {
+    margin-left: 220px;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .revenue-section, .revenue-day, .schedule-section {
+    margin-bottom: 20px;
+  }
+  
+  .month-select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  h3 {
+    color: #ffffff;
+    background-color: rgb(174, 50, 110);
+    padding: .5rem .5rem .5rem .5rem;
+    border-radius: .5rem;
+  }
+  
+  .schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .schedule-table th, .schedule-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .schedule-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .schedule-table td {
+    background-color: #fafafa;
+  }
+  
+  .revenue-day {
+    font-size: 20px;
+    font-weight: bold;
+  }
