@@ -1,23 +1,18 @@
 package com.tastytreats.backend.service;
 
 import com.tastytreats.backend.entity.Review;
-import com.tastytreats.backend.repository.ReviewRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
+import org.bson.types.ObjectId;
 
 import java.util.List;
+import java.util.Optional;
 
-@Service
-public class ReviewService {
-    @Autowired
-    private ReviewRepository reviewRepository;
+public interface ReviewService {
+    List<Review> getAllReviews();
+    Optional<Review> getReviewById(ObjectId id);
+    Review createReview(Review review);
+    Review updateReview(ObjectId id, Review review);
+    void deleteReview(ObjectId id);
+    List<Review> getReviewsByCustomerId(Long customerId);
 
-    public List<Review> getAllReviews() {
-        return reviewRepository.findAll();
-    }
-
-    public Review createReview(Review review) {
-        return reviewRepository.save(review);
-    }
+    List<Review> getReviewsByRating(int rating);
 }

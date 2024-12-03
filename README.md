@@ -121,5 +121,8 @@ If you have any questions, suggestions, or feedback, feel free to reach out!
 - **Erik Contreras**
    - Email: [erikcontreras@csus.edu](mailto:erikcontreras@csus.edu)
    - GitHub: [Erik Contreras](https://github.com/rIKeCO2)
+- **Abhijit Singh Ubhi**
+   - Email: AbhijitSinghUbhi@csus.edu(mailto:abhijit2003ubhi@gmail.com)
+   - GitHub: [AbhijitSinghUbhi2003](https://github.com/AbhijitSinghUbhi2003)
 
 Feel free to open an issue on the repository for bugs or feature requests.

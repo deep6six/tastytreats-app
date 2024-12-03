@@ -1,0 +1,76 @@
+.form5 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between form elements */
+}
+
+.ul5 {
+    list-style-type: none;
+    padding: 0;
+}
+
+.li5 {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.write-review-title {
+    color: #85144B;
+    font-size: 100px; 
+}
+
+.button5 {
+    padding: 10px;
+    background-color: #85144B;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 40px;
+}
+.outer-container2 {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 29px;
+    padding: 50px; /* Adjust padding as needed */
+    max-height: 5090px; /* Adjust this as needed */
+  
+    box-shadow: 0 10px 19px rgba(0, 0, 0, 0.1); /* Optional: add a shadow */
+    gap: 20px; /* Space between items */
+}
+.parent-container1 {
+
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 800px;
+    padding-top: 200px;
+ 
+    border-radius: 10px;
+}
+
+  .star-rating {
+    display: flex;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #d3d3d3; /* Light gray for unfilled stars */
+}
+
+
+.star {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.star.filled {
+    color: gold;
+}
+

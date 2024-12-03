@@ -1,3 +1,6 @@
+
+
+z
 .header {
   background-color: #f8f9fa;
   width: 100%;
@@ -5,19 +8,25 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+
+
+  
 }
 
 .logo img {
   width: auto;
   height: 100px;
   display: block;
+  margin: 0px;
 }
 
 .navbar {
-  background-color: #853d3d;
-  padding: 10px 0;
+  background-color: #85144B;
   flex-grow: 1;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
 
 .navbar-links {
@@ -26,6 +35,9 @@
   justify-content: center;
   margin: 0;
   padding: 0;
+
+    align-items: center; /* Vertically centers items */
+   
 }
 
 .navbar-link {
@@ -33,8 +45,11 @@
   text-decoration: none;
   padding: 10px 20px;
   margin: 0 10px;
+  
 }
 
 .navbar-link:hover {
   background-color: #581010;
+  
 }
+
