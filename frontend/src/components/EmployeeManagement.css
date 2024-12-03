@@ -78,7 +78,7 @@
     background-color: #fafafa;
   }
   */
-.sidebar {
+.sidebar2 {
   width: 250px;
   background-color: rgba(0, 0, 0, 0.717);
   color: white;
@@ -86,7 +86,7 @@
   flex-direction: column;
   justify-content: space-between;
   position: fixed; 
-  height: 78vh;           
+  height: 79vh;           
   left: 0;        
   padding: 0;
 }
@@ -109,7 +109,7 @@
   background-color: rgb(207, 112, 160);
 }
 .back-button {
-  background-color: #f44336;
+  background-color: rgb(244, 67, 54);
   color: white;
   border: none;
   padding: 10px;
@@ -120,7 +120,7 @@
   margin: .5rem .5rem ;
 }
 .back-button:hover {
-  background-color: #e53935;
+  background-color: rgb(229, 57, 53);
 }
   
 .content {
@@ -135,7 +135,7 @@
   font-size: 16px;
   margin-left: 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(204, 204, 204);
 }
   
 .profile-box, .payroll-box, .availability-box, .schedule-box {
@@ -146,11 +146,11 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
   
-.h1{
+.management{
   color: rgb(174, 50, 110);
   margin-left: 0rem;
 }
-.h2{
+.heads{
   padding: 1rem 0 1rem .5rem;
   color: white;
   background-color: rgb(174, 50, 110);

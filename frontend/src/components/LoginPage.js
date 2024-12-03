@@ -130,8 +130,8 @@ const LoginPage = () => {
               />
             </div>
             <div className="button-groupLog">
-              <button type="button" className="employee-button" onClick={() => navigate('/employee-login')}>Employee</button>
-              <button type="button" className="admin-button" onClick={() => navigate('/admin-login')}>Admin</button>
+              <Link to="/employee"><button className="employee-button">Employee</button></Link>
+              <Link to ="/admin"><button className="admin-button">Admin</button></Link>
             </div>
             <button type="submit" className="login-button">Log-in</button>
           </form>

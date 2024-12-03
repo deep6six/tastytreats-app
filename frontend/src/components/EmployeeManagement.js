@@ -107,7 +107,7 @@ function EmployeeManagement() {
   return (
     <div className="employee-management">
 
-      <div className="sidebar">
+      <div className="sidebar2">
         <div className="sidebar-buttons">
           <Link to="/new_employee" className="sidebar-button" >
             <button className="sidebar-button">New Employee Account</button>
@@ -130,7 +130,7 @@ function EmployeeManagement() {
       </div>
 
       <div className="content">
-        <h1>Employee Management</h1>
+        <h1 className="management">Employee Management</h1>
         <div className="employee-selector">
           <label htmlFor="employee-select">Select Employee: </label>
           <select id="employee-select" onChange={handleEmployeeChange} value={selectedEmployee.name}>
@@ -143,7 +143,7 @@ function EmployeeManagement() {
         </div>
 
         <div className="profile-box">
-          <h2>Profile Information</h2>
+          <h2 className="heads">Profile Information</h2>
           <p><strong>Name:</strong> {selectedEmployee.name}</p>
           <p><strong>Employee ID:</strong> {selectedEmployee.id}</p>
           <p><strong>Contact Info:</strong> {selectedEmployee.contact}</p>
@@ -151,7 +151,7 @@ function EmployeeManagement() {
         </div>
 
         <div className="payroll-box">
-          <h2>Payroll</h2>
+          <h2 className="heads">Payroll</h2>
           <div className="current-payroll">
             <h3>Current</h3>
             <p><strong>Hours Worked (This Week):</strong> {selectedEmployee.weeklyHoursWorked} hours</p>
@@ -166,7 +166,7 @@ function EmployeeManagement() {
         </div>
 
         <div className="availability-box">
-          <h2>Availability</h2>
+          <h2 className="heads">Availability</h2>
             <ul>
               {['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'].map((day) => (
                 <li key={day}>
@@ -178,7 +178,7 @@ function EmployeeManagement() {
         </div>
 
         <div className="schedule-box">
-          <h2>Schedule</h2>
+          <h2 className="heads">Schedule</h2>
           <ul>
             {Object.keys(selectedEmployee.schedule).map((day) => (
               <li key={day}>

@@ -1,9 +1,4 @@
-.edit-menu {
-    padding: 20px;
-    font-family: Arial, sans-serif;
-}
-.sidebar {
-    margin-top: -1.5rem;
+.sidebar4 {
     width: 250px;
     background-color: rgba(0, 0, 0, 0.717);
     color: white;
@@ -11,7 +6,7 @@
     flex-direction: column;
     justify-content: space-between;
     position: fixed; 
-    height: 78vh;           
+    height: 79vh;           
     left: 0;        
     padding: 0;
 }
@@ -34,7 +29,7 @@
     background-color: rgb(207, 112, 160);
 }
 .back-button {
-    background-color: #f44336;
+    background-color: rgb(244, 67, 54);
     color: white;
     border: none;
     padding: 10px;
@@ -45,15 +40,16 @@
     margin: .5rem .5rem ;
 }
 .back-button:hover {
-    background-color: #e53935;
+    background-color: rgb(229, 57, 53);
 }
-h1{
+.theHead{
     margin-left: 250px;
-    background-color: rgb(174, 50, 110);
-    color: white;
+    color: rgb(174, 50, 110);
     padding: .5rem;
-    width: 100%;
     border-radius: 8px;
+}
+.newFood {
+    color:white;
 }
 .menu-items {
     margin-left: 250px;
@@ -64,7 +60,7 @@ h1{
   
 .menu-item {
     width: 200px;
-    border: 1px solid #ddd;
+    border: 1px solid rgb(221, 221, 221);
     padding: 10px;
     border-radius: 8px;
     text-align: center;
@@ -88,7 +84,7 @@ h1{
     padding: 8px;
     width: 80%;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(204, 204, 204);
 }
   
 .add-item-form {
@@ -101,7 +97,7 @@ h1{
     padding: 8px;
     width: 80%;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(204, 204, 204);
 }
   
 .add-item-form  {

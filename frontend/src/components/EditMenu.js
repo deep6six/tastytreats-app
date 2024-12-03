@@ -45,7 +45,7 @@ function EditMenu() {
 
   return (
     <div className="edit-menu">
-        <div className="sidebar">
+        <div className="sidebar4">
         <div className="sidebar-buttons">
           <Link to="/new_employee" className="sidebar-button" >
             <button className="sidebar-button">New Employee Account</button>
@@ -66,13 +66,13 @@ function EditMenu() {
           &#8592; Back
         </button>
       </div>
-        <h1>Edit Menu</h1>
+        <h1 className="theHead">Edit Menu</h1>
         <div className="menu-items">
             {menuItems.map((item) => (
                 <div key={item.id} className="menu-item">
                     <div className="item-details">
                         <img src={item.imageUrl} alt={item.name} className="item-image" />
-                        <h3>{item.name}</h3>
+                        <h3 >{item.name}</h3>
                         <input
                         type="number"
                         value={item.cost}
@@ -91,9 +91,8 @@ function EditMenu() {
             ))}
         </div>
 
-      {/* Form to add a new food item */}
       <div className="add-item-form">
-        <h2>Add New Food Item</h2>
+        <h2 className="newFood">Add New Food Item</h2>
         <input
           type="text"
           placeholder="Food Name"

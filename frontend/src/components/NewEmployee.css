@@ -33,7 +33,7 @@
     background-color: rgb(207, 112, 160);
 }
 .back-button {
-    background-color: #f44336;
+    background-color: rgb(244, 67, 54);
     color: white;
     border: none;
     padding: 10px;
@@ -44,7 +44,7 @@
     margin: .5rem .5rem ;
 }
 .back-button:hover {
-    background-color: #e53935;
+    background-color: rgb(229, 57, 53);
 }
 .form-container {
     margin-left: 260px; 
@@ -52,7 +52,7 @@
     width: calc(100% - 260px);
 }
   
-h2 {
+.info {
     margin-bottom: 20px;
     background-color: rgb(174, 50, 110);
     color: white;
@@ -92,7 +92,7 @@ button:hover {
     background-color: rgb(137, 36, 85);
   }
   
-popup {
+.popup {
     position: fixed;
     top: 0;
     left: 0;
@@ -115,5 +115,5 @@ popup {
   
 .popup p {
     font-size: 18px;
-    color: #333;
+    color: rgb(51, 51, 51);
 }

@@ -67,7 +67,7 @@ const employees = [
 
   return (
     <div>
-      <div className="sidebar">
+      <div className="sidebar3">
         <div className="sidebar-buttons">
         <Link to="/new_employee" className="sidebar-button" >
             <button className="sidebar-button">New Employee Account</button>
@@ -91,12 +91,12 @@ const employees = [
 
         <div className="headingTitle">
             <strong><h1>Scheduling</h1></strong>
-            <h2>Week: 12/1 - 12/7</h2>
+            <h2 className="heads">Week: 12/1 - 12/7</h2>
             </div>
         <div className="days-grid">
             {["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"].map((day, index) => (
                 <div key={day} className="day-box">
-                <h2>{day}</h2>
+                <h2 className="heads">{day}</h2>
                 <div className="employee-selection">
                     {[...Array(inputCounts[day])].map((_, inputIndex) => (
                         <div key={inputIndex} className="employee-select-container">
@@ -115,7 +115,7 @@ const employees = [
                     ))}  
                 </div>
             <div className="scheduled-employees">
-              <h3>Scheduled:</h3>
+              <h3 className="headThree">Scheduled:</h3>
               {schedule[day].map((scheduledEmployee, index) => {
                 const employee = employees.find((emp) => emp.id === scheduledEmployee.employeeId);
                 return (

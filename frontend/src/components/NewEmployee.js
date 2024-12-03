@@ -49,7 +49,7 @@ function NewEmployee() {
       </div>
 
       <div className="form-container">
-        <h2><strong>New Employee Information</strong></h2>
+        <h2 className="Info"><strong>New Employee Information</strong></h2>
         <form onSubmit={handleSubmit}>
           <label>Email:</label>
           <input

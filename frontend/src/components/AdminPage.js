@@ -24,7 +24,7 @@ const AdminPage = () => {
   return (
     <div className="the-page-container">
       
-      <div className="sidebar">
+      <div className="sidebar1">
         <div className="sidebar-buttons">
           <Link to="/new_employee" className="sidebar-button" >
             <button className="sidebar-button">New Employee Account</button>
@@ -47,10 +47,10 @@ const AdminPage = () => {
       </div>
 
       <div className="content">
-        <h1>Admin Dashboard</h1>
+        <h1 className="admin">Admin Dashboard</h1>
 
         <div className="revenue-section">
-          <h2>Monthly Revenue: ${monthlyRevenue}</h2>
+          <h2 className="heads">Monthly Revenue: ${monthlyRevenue}</h2>
           <div className="month-selector">
             <label htmlFor="month-select">Choose Month:</label>
             <select id="month-select" value={selectedMonth} onChange={handleMonthChange}>
@@ -65,15 +65,15 @@ const AdminPage = () => {
         </div>
 
         <div className="revenue-section">
-          <h2>Daily Revenue (Today): ${dailyRevenue}</h2>
+          <h2 className="heads">Daily Revenue (Today): ${dailyRevenue}</h2>
         </div>
 
         <div className="schedule-section">
-          <h2>Weekly Schedule</h2>
+          <h2 className="heads">Weekly Schedule</h2>
           <div className="schedule-grid">
             {weeklySchedule.map((schedule) => (
               <div key={schedule.day} className="schedule-card">
-                <h3>{schedule.day}</h3>
+                <h3 className="heads">{schedule.day}</h3>
                 <p>Employees: {schedule.people.join(', ')}</p>
               </div>
             ))}
