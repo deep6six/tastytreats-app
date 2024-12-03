@@ -16,6 +16,8 @@ import LoginPage from "./components/LoginPage";
 import RegistrationPage from "./components/RegistrationPage";
 import CustomerReviewPage from "./components/CustomerReviewPage";
 import WriteReview from "./components/WriteReview";
+import EmployeeLoginPage from "./components/EmployeeLoginPage";
+import AdminLoginPage from "./components/AdminLoginPage";
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
           <Route path="/register" element={<RegistrationPage />} />
           <Route path="/review" element={<CustomerReviewPage />} />
           <Route path="/reviews" element={<WriteReview />} />
+          <Route path="/employee-login" element={<EmployeeLoginPage />} />
+          <Route path="/admin-login" element={<AdminLoginPage />} />
         </Routes>
       </div>
     </Router>
