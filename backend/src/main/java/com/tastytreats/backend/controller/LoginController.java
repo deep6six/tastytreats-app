@@ -7,8 +7,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
-
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import java.util.Optional;
 
 @RestController
@@ -31,7 +29,6 @@ public class LoginController {
 
         if (userOptional.isPresent()) {
             User user = userOptional.get();
-            // Check if the entered password matches the stored encrypted password
             if (passwordEncoder.matches(loginRequest.getPassword(), user.getPassword())) {
                 return ResponseEntity.ok("Login successful");
             }
