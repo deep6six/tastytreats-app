@@ -15,7 +15,6 @@ import lombok.NoArgsConstructor;
 public class User {
 	@Id
 	private ObjectId id;
-	
 	private String username;
 	private String password;
 	private Role role; //CUSTOMER, EMPLOYEE, ADMIN

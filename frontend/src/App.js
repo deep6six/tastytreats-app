@@ -36,15 +36,12 @@ function App() {
           <Route path="/register" element={<RegistrationPage />} />
           <Route path="/review" element={<CustomerReviewPage />} />
           <Route path="/reviews" element={<WriteReview />} />
-<<<<<<< HEAD
           <Route path="/employee-login" element={<EmployeeLoginPage />} />
           <Route path="/admin-login" element={<AdminLoginPage />} />
-=======
 
           {/* New Routes */}
           <Route path="/employee" element={<EmployeePage />} />
           <Route path="/employee-profile" element={<EmployeeProfile />} />
->>>>>>> a8429643865f8a2772425da24c6375b1bbe8ba93
         </Routes>
       </div>
     </Router>

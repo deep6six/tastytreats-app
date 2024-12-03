@@ -91,7 +91,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Modal, Button, Form } from "react-bootstrap";
+import { Modal, Button} from "react-bootstrap";
 import "./LoginPage.css"; // Import the same CSS for styling
 
 const RegistrationPage = () => {

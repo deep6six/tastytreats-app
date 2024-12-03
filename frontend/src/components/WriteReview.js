@@ -119,7 +119,7 @@ export default CustomerReviewPage;*/
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./WriteReview.css";
-
+import { Link } from "react-router-dom";
 const CustomerReviewPage = () => {
     const [customerId, setCustomerId] = useState('');
     const [reviewTitle, setReviewTitle] = useState('');
@@ -236,7 +236,7 @@ const CustomerReviewPage = () => {
                             <div style={{ color: 'green', marginTop: '10px' }}>
                                 <h3>Submit Successful</h3>
                                 <p>Your submission has been submitted</p>
-                                <button onClick={() => setSuccess('')}>Close</button>
+                                <Link to="/review" style={{ marginTop: '10px' }}> <button onClick={() => setSuccess('')}>Close</button></Link>
                             </div>
                         )}
                     </form>
@@ -246,7 +246,7 @@ const CustomerReviewPage = () => {
                                 <h3>{review.reviewTitle}</h3>
                                 <p>{review.reviewBody}</p>
                                 <p>Rating: {Array.from({ length: review.rating }).map((_, index) => '★')}</p>
-                                <button onClick={() => handleDelete(review.id)}>Delete</button>
+                                 <button onClick={() => handleDelete(review.id)}>Delete</button>
                             </li>
                         ))}
                     </ul>

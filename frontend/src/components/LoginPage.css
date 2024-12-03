@@ -413,6 +413,7 @@
 }
 
 .employee-button,
+.customer-button,
 .admin-button {
   height: 100px; /* Increased height */
   padding: 12px; /* More padding */
