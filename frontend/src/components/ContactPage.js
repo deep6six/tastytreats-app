@@ -14,7 +14,7 @@ function ContactPage(){
           <div><p>Email: tastytreat@yahoo.com</p></div>
         </div>
         <button className = "review">
-          <Link to="/admin" className="navbar-link">Leave A Review </Link>
+          <Link to="/review" className="navbar-link">Leave A Review </Link>
         </button>
       </div>
     </div>
