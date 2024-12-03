@@ -1,90 +1,60 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function EmployeePage() {
-  // Example schedule data
-  const schedule = [
-    { day: "Mon", hours: "8:00am - 12:00pm" },
-    { day: "Tue", hours: "3:00pm - 7:00pm" },
-    { day: "Wed", hours: "OFF" },
-    { day: "Thu", hours: "8:00am - 12:00pm" },
-    { day: "Fri", hours: "OFF" },
-    { day: "Sat", hours: "OFF" },
-    { day: "Sun", hours: "8:00am - 11:00am" },
+  // Example employee data (this can later be replaced with API calls)
+  const employees = [
+    { id: 1, name: "John Doe", title: "Manager" },
+    { id: 2, name: "Jane Smith", title: "Chef" },
+    { id: 3, name: "Alice Johnson", title: "Server" },
   ];
 
   return (
     <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
-      {/* Header Section */}
-      <header
-        style={{
-          textAlign: "center",
-          padding: "20px",
-          backgroundColor: "#800040",
-          color: "white",
-        }}
-      >
-        <h1>Tasty Treat</h1>
-        <nav style={{ display: "flex", justifyContent: "center", gap: "10px" }}>
-          <button style={navButtonStyle}>Personal Information</button>
-          <button style={navButtonStyle}>Update Availability</button>
-          <button style={navButtonStyle}>Schedule</button>
-          <button style={navButtonStyle}>Update Availability</button>
-        </nav>
-      </header>
+      <h1 style={{ textAlign: "center", color: "#800040" }}>Employee Management</h1>
 
-      {/* Employee Info Section */}
-      <div style={{ marginTop: "20px", textAlign: "center" }}>
-        <h2>Schedule: 10/13/24 - 10/19/24</h2>
-        <p
+      <div style={{ margin: "20px 0", textAlign: "center" }}>
+        <Link
+          to="/employee-profile"
           style={{
-            display: "inline-block",
+            padding: "10px 20px",
             backgroundColor: "#800040",
             color: "white",
-            padding: "10px 20px",
-            borderRadius: "20px",
+            textDecoration: "none",
+            borderRadius: "5px",
           }}
         >
-          John Smith
-        </p>
+          View Employee Profile
+        </Link>
       </div>
 
-      {/* Schedule Section */}
-      <div
+      <table
         style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(7, 1fr)",
-          gap: "10px",
+          width: "100%",
+          borderCollapse: "collapse",
           marginTop: "20px",
+          textAlign: "left",
         }}
       >
-        {schedule.map((item, index) => (
-          <div
-            key={index}
-            style={{
-              padding: "10px",
-              backgroundColor: item.hours === "OFF" ? "#ccc" : "#800040",
-              color: "white",
-              textAlign: "center",
-              borderRadius: "10px",
-            }}
-          >
-            <h3>{item.day}</h3>
-            <p>{item.hours}</p>
-          </div>
-        ))}
-      </div>
+        <thead>
+          <tr style={{ backgroundColor: "#800040", color: "white" }}>
+            <th style={{ padding: "10px", border: "1px solid #ddd" }}>ID</th>
+            <th style={{ padding: "10px", border: "1px solid #ddd" }}>Name</th>
+            <th style={{ padding: "10px", border: "1px solid #ddd" }}>Title</th>
+          </tr>
+        </thead>
+        <tbody>
+          {employees.map((employee) => (
+            <tr key={employee.id}>
+              <td style={{ padding: "10px", border: "1px solid #ddd" }}>{employee.id}</td>
+              <td style={{ padding: "10px", border: "1px solid #ddd" }}>{employee.name}</td>
+              <td style={{ padding: "10px", border: "1px solid #ddd" }}>{employee.title}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }
-
-// Reusable styles
-const navButtonStyle = {
-  backgroundColor: "#333",
-  color: "white",
-  padding: "10px 15px",
-  border: "none",
-  borderRadius: "5px",
-  cursor: "pointer",
-};
 
 export default EmployeePage;
