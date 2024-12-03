@@ -20,7 +20,7 @@ const employees = [
     Saturday: [],
   });
 
-  const [inputCounts, setInputCounts] = useState({
+  const [inputCounts] = useState({
     Sunday: 1,
     Monday: 1,
     Tuesday: 1,
