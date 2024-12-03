@@ -258,10 +258,11 @@
   margin-top: 1rem;
   width: 75%;
   color: aliceblue;
-  background-color: rgb(133, 20, 75);
+  background-color: rgb(174, 50, 110);
   display: center;
   text-align: center;
   overflow: hidden;
+  border-radius: 1rem;
 }
 .emailBox{
   overflow: hidden;
@@ -269,13 +270,14 @@
   text-align: center;
   color: aliceblue;
   margin: 2rem 2rem;
-  background-color: rgb(133, 20, 75);
+  background-color: rgb(174, 50, 110);
   display: center;
+  border-radius: 1rem;
 }
 .review{
   overflow: hidden;
   margin-top: 2rem;
-  background-color: rgb(133, 20, 75);
+  background-color: rgb(174, 50, 110);
   color: aliceblue; 
 }
 

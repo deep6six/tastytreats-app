@@ -1,0 +1,195 @@
+/*.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .back-btn, .employee-switch-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .employee-switch-btn {
+    background-color: #007BFF;
+  }
+  
+  .back-btn:hover, .employee-switch-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .employee-list {
+    margin-top: 20px;
+  }
+  
+  .employee-item {
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin: 5px 0;
+    cursor: pointer;
+    border: 1px solid #ddd;
+  }
+  
+  .employee-item:hover {
+    background-color: #ddd;
+  }
+  
+  .profile-box, .payroll-box, .availability-box, .schedule-box {
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h3 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  td {
+    background-color: #fafafa;
+  }
+  */
+  container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    width: 13rem;
+    background-color: rgba(0, 0, 0, 0.717);
+    color: white;
+    padding: 1.5rem;
+    position: fixed;
+    height: 100%;
+  }
+  
+  .sidebar-btn {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgb(227, 160, 193);
+    color: white;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .sidebar-btn:hover {
+    background-color: #1abc9c;
+  }
+  
+  .main-content {
+    margin-left: 220px;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .back-btn, .employee-switch-btn {
+    padding: 10px 20px;
+    background-color:rgb(174, 50, 110);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .employee-switch-btn {
+    background-color: rgb(174, 50, 110);
+  }
+  
+  .back-btn:hover, .employee-switch-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .employee-list {
+    margin-top: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .employee-item {
+    padding: 10px;
+    background-color: #e1e1e1;
+    margin: 5px 0;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+  }
+  
+  .employee-item:hover {
+    background-color: #ccc;
+  }
+  
+  .profile-box, .payroll-box, .availability-box, .schedule-box {
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0,) 
+  }
+  h3 {
+    margin-bottom: 10px;
+    color: white;
+    background-color: rgb(174, 50, 110);
+    padding-left: .5rem;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: .2rem solid rgb(174, 50, 110);
+  }
+  
+  th {
+    padding: 10px;
+    text-align: center;
+    border: .2rem solid rgb(174, 50, 110);
+    background-color:rgb(174, 50, 110);
+    color: white;
+  }
+  
+  td {
+    padding: 10px;
+    text-align: center;
+    border: .2rem solid rgb(174, 50, 110);
+    background-color: #fafafa;
+  }
