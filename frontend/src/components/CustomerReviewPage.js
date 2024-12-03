@@ -912,7 +912,7 @@ const CustomerReviewPage = () => {
     // Function to render stars based on the rating
     const renderStars = (rating) => {
         return Array.from({ length: 5 }, (_, index) => (
-            <span key={index} style={{ color: index < rating ? '#85144B' : '#ddd' }}>
+            <span key={index} style={{  color: index < rating ? '#85144B' : '#ddd' }}>
                 ★
             </span>
         ));
@@ -934,11 +934,11 @@ const CustomerReviewPage = () => {
                                     <div className="right-corner">
                                         <span style={{ fontSize: '0.9em', color: '#888' }}>{review.createdDate}</span>
                                     </div>
-                                    <h2>Review Title: {review.reviewTitle}</h2>
+                                    <h2 style={{ fontSize: '2.5em' }}><b>{review.reviewTitle}</b></h2>
                                     <div>
-                                        <p>Rating: {renderStars(review.rating)}</p>
+                                        <p style={{ fontSize: '2.5em' }}>Rating: {renderStars(review.rating)}</p>
                                     </div>
-                                    <p>Review Body: {review.reviewBody}</p>
+                                    <p style={{ fontSize: '2.5em' }}>Review Body: {review.reviewBody}</p>
                                 </li>
                             ))}
                         </ul>
