@@ -49,7 +49,7 @@ const Navbar = () => {
  
           </Link>
           <Link to="/review" className="navbar-link">
-            CustomerReview
+            Customer Review
  
           </Link>
         </li>
