@@ -38,7 +38,7 @@ const RegistrationPage = () => {
 
   const closeModal = () => {
     setShowModal(false);
-    navigate("/menu");
+    navigate("/Login");
   };
 
   return (
