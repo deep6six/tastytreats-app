@@ -21,7 +21,7 @@ function PayPalButtonsDisplay() {
     const [message, setMessage] = useState("");
 
     return (
-        <div className="App">
+        <div className="PayPalApp">
             <PayPalScriptProvider options={initialOptions}>
                 <PayPalButtons
                     style={{
@@ -42,8 +42,8 @@ function PayPalButtonsDisplay() {
                                 body: JSON.stringify({
                                     cart: [
                                         {
-                                            id: "YOUR_PRODUCT_ID",
-                                            quantity: "YOUR_PRODUCT_QUANTITY",
+                                            id: "100",
+                                            quantity: "1",
                                         },
                                     ],
                                 }),
