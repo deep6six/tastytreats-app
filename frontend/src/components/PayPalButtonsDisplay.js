@@ -42,8 +42,8 @@ function PayPalButtonsDisplay() {
                                 body: JSON.stringify({
                                     cart: [
                                         {
-                                            id: "100",
-                                            quantity: "1",
+                                            id: "YOUR_PRODUCT_ID",
+                                            quantity: "YOUR_PRODUCT_QUANTITY",
                                         },
                                     ],
                                 }),

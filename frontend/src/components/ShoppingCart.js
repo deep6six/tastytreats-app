@@ -4,12 +4,21 @@ import PayPalButtonsDisplay from "./PayPalButtonsDisplay";
 
 const ShoppingCart = () => {
     const [cartItems, setCartItems] = useState([]);
+    const [totalPrice, setTotal] = useState("");
   
     useEffect(() => {
       let cartItems = JSON.parse(localStorage.getItem('items')) || [];
       setCartItems(cartItems);
       console.log(cartItems);
     }, []);
+
+    useEffect(() => {
+      let total = 0;
+      cartItems.map((cartItem, index) => {
+        total += cartItem.price;
+      })
+      setTotal(total.toFixed(2));
+    })
 
 
       return (
@@ -20,11 +29,15 @@ const ShoppingCart = () => {
               <div key={index} className="cartitem">
                 <img src={cartitem.imageUrl} alt={cartitem.title} />
                 <h2>{cartitem.title}</h2>
-                <p>Price: ${cartitem.price}</p>
               </div>
             ))}
           </div>
-          <PayPalButtonsDisplay />
+          <div className="totalPrice">
+            <p>Price: ${totalPrice}</p>
+          </div>
+          <div className="paypalbtns">
+            <PayPalButtonsDisplay />
+          </div>
         </div>
       );
 };

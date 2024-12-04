@@ -42,3 +42,15 @@
     padding: 5px 0;
     font-size: 14px;
 }
+
+.paypalbtns {
+    margin-left: 40%;
+    padding-top: 10vh;
+}
+
+.totalPrice {
+    color: rgb(119, 0, 0);
+    margin-left: 46%;
+    padding-top: 10vh;
+    font-size: 4em;
+}
